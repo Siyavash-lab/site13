@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iranshop</title>
+</head>
+<body>
+    <script src="index.js"></script>
+
+
+    
+<div class="page">
+    
+    <h1 style="font-family:Arial, Helvetica, sans-serif;color: white;font-size: 40px;margin-top: 10px;">Iranshop</h1>
+
+    <div class="main">  	
+		<input type="checkbox" id="chk" aria-hidden="true">
+
+			<div class="signup">
+				<form method="post" action="Iranshop.html">
+					<label for="chk" aria-hidden="true">Sign up</label>
+					<input type="text" name="txt" placeholder="User name" required="">
+					<input type="email" name="email" placeholder="Email" required="">
+          <input type="number" name="year" placeholder="Year Of Birth" required="">
+					<input type="password" name="pswd" placeholder="Password" required="">
+					<button>Sign up</button>
+				</form>
+			</div>
+	</div>
+</div>
+
+
+</body>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        justify-content: center;
+        align-items: center;
+    }
+#chk{
+	display: none;
+}
+.signup{
+	position: relative;
+	width:100%;
+	height: 100%;
+}
+label{
+	color: #fff;
+	font-size: 2.3em;
+	justify-content: center;
+	display: flex;
+	margin: 50px;
+	font-weight: bold;
+	cursor: pointer;
+	transition: .5s ease-in-out;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+input{
+	width: 60%;
+	height: 10px;
+	background: #e0dede;
+	justify-content: center;
+	display: flex;
+	margin: 20px auto;
+	padding: 12px;
+	border: none;
+	outline: none;
+	border-radius: 5px;
+}
+button{
+	width: 60%;
+	height: 40px;
+	margin: 10px auto;
+	justify-content: center;
+	display: block;
+	color: #fff;
+	background: #573b8a;
+	font-size: 1em;
+	font-weight: bold;
+	margin-top: 30px;
+	outline: none;
+	border: none;
+	border-radius: 5px;
+	transition: .2s ease-in;
+	cursor: pointer;
+}
+button:hover{
+	background: #6d44b8;
+}
+.login{
+	height: 460px;
+	background: #eee;
+	border-radius: 60% / 10%;
+	transform: translateY(-180px);
+	transition: .8s ease-in-out;
+}
+.login label{
+	color: #573b8a;
+	transform: scale(.6);
+}
+
+#chk:checked ~ .login{
+	transform: translateY(-500px);
+}
+#chk:checked ~ .login label{
+	transform: scale(1);	
+}
+#chk:checked ~ .signup label{
+	transform: scale(.6);
+}
+    body{
+        justify-content: center;
+        background: rgb(1,130,124);
+        background: linear-gradient(90deg, rgba(1,130,124,1) 0%, rgba(81,93,255,1) 100%);
+    }
+    .page{
+        border-radius:50px;
+        margin-top: 200px;
+        margin-left: 700px;
+        text-align: center;
+        background: rgb(1,130,124);
+        background: linear-gradient(90deg, rgba(1,130,124,1) 0%, rgba(81,93,255,1) 100%);
+        width: 500px;
+        height: 500px;
+        box-shadow: rgba(0, 0, 0, 0.75) 0 8px 15px;
+        transform: translateY(-2px);
+    }
+</style>
+</html>
